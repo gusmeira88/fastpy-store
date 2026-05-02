@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="style.css">
+<head>
+    <title>Alterar Produto</title>
+</head>
+
+<div class="card">
+    <h1>Alterar produto</h1>
+    <h2>Selecione um produto</h2>
+    <ul id="lista"></ul>
+
+    <hr>
+
+    <form onsubmit="alterar(event)">
+        <input type="hidden" id="id-selecionado">
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" id="nome">
+        </div>
+        <div class="form-group">
+          <label>Preço (R$)</label>
+          <input type="text" id="preco" placeholder="R$ 0,00" oninput="mascaraPreco(this)">
+        </div>
+        <button type="submit">Salvar alteração</button>
+       
+    </form>
+    <a href="index.html"><button>Voltar</button></a>
+    
+</div>
+
+<script src="script.js"></script>
